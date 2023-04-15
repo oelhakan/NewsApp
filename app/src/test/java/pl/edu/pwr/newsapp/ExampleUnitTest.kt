@@ -1,4 +1,4 @@
-package com.androiddevs.mvvmnewsapp
+package pl.edu.pwr.newsapp
 
 import org.junit.Test
 
