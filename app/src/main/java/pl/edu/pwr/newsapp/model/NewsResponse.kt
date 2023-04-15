@@ -1,4 +1,4 @@
-package pl.edu.pwr.newsapp.db.models
+package pl.edu.pwr.newsapp.model
 
 data class NewsResponse(
     val articles: List<Article>,

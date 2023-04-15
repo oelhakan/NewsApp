@@ -9,14 +9,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Set up retrofit">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/dao/ArticleDao.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/ArticleDatabase.kt" afterDir="false" />
+    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Set up Room, dao and type converters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/Article.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Article.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/NewsResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/NewsResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/Source.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Source.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/api/NewsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/api/NewsAPI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/ArticlesDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/ArticlesDatabase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/Converters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/Converters.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/dao/ArticleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/dao/ArticleDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/models/Article.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Article.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/models/NewsResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/NewsResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/models/Source.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Source.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681597704384</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Set up Room, dao and type converters">
+      <created>1681598810957</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681598810957</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +223,7 @@
     <MESSAGE value="Set up fragments, add bottom navigation, replace icons" />
     <MESSAGE value="Update gitignore" />
     <MESSAGE value="Set up retrofit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up retrofit" />
+    <MESSAGE value="Set up Room, dao and type converters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up Room, dao and type converters" />
   </component>
 </project>
