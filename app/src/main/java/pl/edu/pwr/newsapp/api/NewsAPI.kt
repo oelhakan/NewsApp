@@ -1,6 +1,6 @@
 package pl.edu.pwr.newsapp.api
 
-import pl.edu.pwr.newsapp.NewsResponse
+import pl.edu.pwr.newsapp.db.models.NewsResponse
 import pl.edu.pwr.newsapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
