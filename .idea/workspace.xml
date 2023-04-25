@@ -9,15 +9,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Set up Room, dao and type converters">
+    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Package refactor, type converter fix">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/adapter/NewsAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/repository/NewsRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModelProviderFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/util/Resource.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/api/NewsAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/api/NewsAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/ArticlesDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/ArticlesDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/Converters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/Converters.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/dao/ArticleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/dao/ArticleDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/models/Article.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Article.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/models/NewsResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/NewsResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/db/models/Source.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Source.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/api/RetrofitInstance.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/api/RetrofitInstance.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/ArticleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/ArticleFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/BreakingNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/BreakingNewsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/LiveFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/LiveFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SavedNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SavedNewsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SearchNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SearchNewsFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681598810957</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Package refactor, type converter fix">
+      <created>1681599096191</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681599096191</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +237,7 @@
     <MESSAGE value="Update gitignore" />
     <MESSAGE value="Set up retrofit" />
     <MESSAGE value="Set up Room, dao and type converters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up Room, dao and type converters" />
+    <MESSAGE value="Package refactor, type converter fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Package refactor, type converter fix" />
   </component>
 </project>
