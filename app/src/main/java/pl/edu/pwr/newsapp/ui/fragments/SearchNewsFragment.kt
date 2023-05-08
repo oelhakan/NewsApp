@@ -41,13 +41,13 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
             )
         }
 
-        var job: Job?= null
+        var job: Job? = null
         etSearch.addTextChangedListener { editable ->
             job?.cancel()
             job = MainScope().launch {
                 delay(SEARCH_NEWS_DELAY)
                 editable?.let {
-                    if(editable.toString().isNotEmpty()){
+                    if(editable.toString().isNotEmpty()) {
                         viewModel.searchNews(editable.toString())
                     }
                 }
@@ -55,7 +55,7 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
         }
 
         viewModel.searchNews.observe(viewLifecycleOwner, Observer { response ->
-            when(response){
+            when(response) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let { newsResponse ->
@@ -72,19 +72,18 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
                     showProgressBar()
                 }
             }
-
         })
     }
 
-    private fun hideProgressBar(){
+    private fun hideProgressBar() {
         paginationProgressBar.visibility = View.INVISIBLE
     }
 
-    private fun showProgressBar(){
+    private fun showProgressBar() {
         paginationProgressBar.visibility = View.VISIBLE
     }
 
-    private fun setupRecyclerView(){
+    private fun setupRecyclerView() {
         newsAdapter = NewsAdapter()
         rvSearchNews.apply {
             adapter = newsAdapter

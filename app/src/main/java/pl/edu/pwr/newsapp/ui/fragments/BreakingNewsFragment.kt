@@ -38,7 +38,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
         }
 
         viewModel.breakingNews.observe(viewLifecycleOwner, Observer { response ->
-            when(response){
+            when(response) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let { newsResponse ->
@@ -55,19 +55,18 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
                     showProgressBar()
                 }
             }
-
         })
     }
 
-    private fun hideProgressBar(){
+    private fun hideProgressBar() {
         paginationProgressBar.visibility = View.INVISIBLE
     }
 
-    private fun showProgressBar(){
+    private fun showProgressBar() {
         paginationProgressBar.visibility = View.VISIBLE
     }
 
-    private fun setupRecyclerView(){
+    private fun setupRecyclerView() {
         newsAdapter = NewsAdapter()
         rvBreakingNews.apply {
             adapter = newsAdapter

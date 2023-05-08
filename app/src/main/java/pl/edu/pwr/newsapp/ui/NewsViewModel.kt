@@ -37,8 +37,8 @@ class NewsViewModel(
     }
 
     private fun handleBreakingNewsResponse(response: Response<NewsResponse>) : Resource<NewsResponse> {
-        if(response.isSuccessful){
-            response.body()?.let{ resultResponse ->
+        if(response.isSuccessful) {
+            response.body()?.let { resultResponse ->
                 return Resource.Success(resultResponse)
             }
         }
@@ -46,8 +46,8 @@ class NewsViewModel(
     }
 
     private fun handleSearchNewsResponse(response: Response<NewsResponse>) : Resource<NewsResponse> {
-        if(response.isSuccessful){
-            response.body()?.let{ resultResponse ->
+        if(response.isSuccessful) {
+            response.body()?.let { resultResponse ->
                 return Resource.Success(resultResponse)
             }
         }
