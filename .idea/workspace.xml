@@ -9,12 +9,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Implement showing articles in web view">
+    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Fix article not showing up in web view on click">
+      <change afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/pl/edu/pwr/newsapp/BuildConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/pl/edu/pwr/newsapp/db/ArticlesDatabase_Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/pl/edu/pwr/newsapp/db/dao/ArticleDao_Impl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/repository/NewsRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/repository/NewsRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/adapter/NewsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/adapter/NewsAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Article.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Article.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/NewsResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/NewsResponse.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/ArticleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/ArticleFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SavedNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SavedNewsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/BreakingNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/BreakingNewsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SearchNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SearchNewsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/util/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/util/Constants.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +74,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/values" />
     </key>
@@ -227,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683564409064</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fix article not showing up in web view on click">
+      <created>1683569524520</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1683569524520</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,6 +270,7 @@
     <MESSAGE value="Set up recycler view, handle network request, breaking news page" />
     <MESSAGE value="Implemented search news functionality" />
     <MESSAGE value="Implement showing articles in web view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement showing articles in web view" />
+    <MESSAGE value="Fix article not showing up in web view on click" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix article not showing up in web view on click" />
   </component>
 </project>
