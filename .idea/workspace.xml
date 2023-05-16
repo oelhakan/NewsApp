@@ -9,18 +9,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Fix article not showing up in web view on click">
-      <change afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/pl/edu/pwr/newsapp/BuildConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/pl/edu/pwr/newsapp/db/ArticlesDatabase_Impl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/generated/source/kapt/debug/pl/edu/pwr/newsapp/db/dao/ArticleDao_Impl.java" afterDir="false" />
+    <list default="true" id="ec100fea-4b15-4619-9f66-e45021b2ebbb" name="Changes" comment="Pagination">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/NewsApplication.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/adapter/NewsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/adapter/NewsAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Article.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/Article.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/NewsResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/model/NewsResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModelProviderFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/NewsViewModelProviderFactory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/BreakingNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/BreakingNewsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SearchNewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/ui/fragments/SearchNewsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/util/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/pl/edu/pwr/newsapp/util/Constants.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683569524520</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Pagination">
+      <created>1684254222857</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684254222857</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,6 +274,7 @@
     <MESSAGE value="Implemented search news functionality" />
     <MESSAGE value="Implement showing articles in web view" />
     <MESSAGE value="Fix article not showing up in web view on click" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix article not showing up in web view on click" />
+    <MESSAGE value="Pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination" />
   </component>
 </project>
