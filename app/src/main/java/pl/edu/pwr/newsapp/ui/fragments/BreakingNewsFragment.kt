@@ -53,7 +53,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
                         val totalPages = newsResponse.totalResults / QUERY_PAGE_SIZE + 2
                         isLastPage = viewModel.breakingNewsPage == totalPages
                         if(isLastPage){
-                            rvSearchNews.setPadding(0, 0, 0, 0)
+                            //rvSearchNews.setPadding(0, 0, 0, 0)
                         }
                     }
                 }

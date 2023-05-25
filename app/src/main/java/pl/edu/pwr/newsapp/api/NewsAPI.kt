@@ -2,6 +2,7 @@ package pl.edu.pwr.newsapp.api
 
 import pl.edu.pwr.newsapp.model.NewsResponse
 import pl.edu.pwr.newsapp.util.Constants.Companion.API_KEY
+import pl.edu.pwr.newsapp.util.Constants.Companion.COUNTRY_CODE
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -11,7 +12,7 @@ interface NewsAPI {
     @GET("v2/top-headlines")
     suspend fun getBreakingNews(
         @Query("country")
-        countryCode: String = "us",
+        countryCode: String = COUNTRY_CODE,
         @Query("page")
         pageNumber: Int = 1,
         @Query("apiKey")

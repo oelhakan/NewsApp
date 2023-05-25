@@ -1,5 +1,6 @@
 package pl.edu.pwr.newsapp.ui.fragments
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.MediaController
@@ -17,29 +18,17 @@ class LiveFragment : Fragment(R.layout.fragment_live) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as NewsActivity).viewModel
+
+        val videoView = view.findViewById<VideoView>(R.id.videoView)
+        val videoPath = "android.resource://${requireActivity().packageName}/${R.raw.video}"
+
+        val videoUri = Uri.parse(videoPath)
+        videoView.setVideoURI(videoUri)
+
+        val mediaController = MediaController(requireContext())
+        mediaController.setAnchorView(videoView)
+        videoView.setMediaController(mediaController)
+
+        videoView.start()
     }
-
-    var videoView: VideoView?= null
-
-    var mediaController: MediaController?= null
-
-//    videoView = findViewById<View>(R.id.videoView) as VideoView?
-//
-//    if(mediaController == null){
-//        mediaController = MediaController(this)
-//        mediaController!!setAnchorView(this.videoView)
-//    }
-//
-//    videoView!!.setMediaController(mediaController)
-//    videoView!!.setVideoURI(Uri.parse("android.resource://" + packageName + "/" + R.raw.abc))
-//    videoView!!.requestFocus()
-//    videoView!!.start()
-//    videoView!!.setOnCompletionListener {
-//        Toast.makeText(applicationContext, "Video End", Toast.LENGTH_LONG).show()
-//    }
-//
-//    videoView!!.setOnErrorListener { mediaPlayer, i, i2 ->
-//        Toast.makeText(applicationContext, "Error", Toast.LENGTH_LONG).show()
-//        false
-//    }
 }
